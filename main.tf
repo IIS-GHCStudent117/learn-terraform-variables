@@ -125,3 +125,8 @@ module "ec2_instances" {
     environment = "manual"
   }
 }
+module "terraform-aws-s3-jrs" {
+  source  = "app.terraform.io/policy-as-code-training/terraform-aws-s3-jrs/aws"
+  version = "1.0.0"
+  bucket_name = "tf-vault-qa-jrs-08-11-2026"
+}
